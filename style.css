@@ -1,9 +1,16 @@
+header{
+    position: relative;
+}
+
+header img:nth-last-child(){
+    top: 0;
+}
+
 h1{
     text-align: center;
     margin: 0;
-
+    
 }
-
 
 .banner{
     height: 100vh;
@@ -11,7 +18,6 @@ h1{
     background-size: cover;
     background-position: center;
     display: flex;
-    font-size: 32px;
     justify-content: center;
 box-shadow: inset 0px -120px 126.5px #00879E;
 
@@ -45,8 +51,6 @@ box-shadow: inset 0px -120px 126.5px #00879E;
 }
 
 .name{
-    flex-grow: 1;
-    color: #000957;
     color: #FFF2DB;
     font-size: 40px;
     background-color: rgba(255, 170, 91, 0.678);
@@ -62,15 +66,18 @@ box-shadow: inset 0px -120px 126.5px #00879E;
 a {
     text-decoration: none;
     color: #192BC3;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFAB5B;
-    border-radius: 10px;
-    margin: 30px;
-    padding: 10px;
-    font-size: 30px;
 }
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    color: #8D8D8D;
+}
+
+
 
 .price_cnt{
     display: flex;
@@ -87,12 +94,31 @@ a {
     cursor: pointer;
 }
 
+.item_container{
+    display: flex;
+    justify-content: space-between;
+}
 
+main {
+    background-color: #00879E;
+}
 
 .korm{
-    color:#8D8D8D;
+    color:#FFF2DB;
     font-size: 70px;
     padding: 70px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFAB5B;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    font-size: 30px;
 }
 
 .item2{
@@ -121,7 +147,7 @@ a {
 }
 
 .weather {
-    color:#8D8D8D;
+    color:#FFF2DB;
     font-size: 70px;
     padding: 70px;
 }
@@ -131,6 +157,11 @@ p{
     text-align: center;
 }
 
+.action{
+    text-decoration: line-through;
+    color: red;
+    font-size: 20px;
+}
 
 .item_container2{
     display: flex;
@@ -147,8 +178,9 @@ p{
 }
 
 .toys {
-    color: #8D8D8D;
-    text-align: center;
+    color: #FFF2DB;
+    font-size: 70px;
+    padding: 70px;
 }
 
 .background_2{
@@ -181,8 +213,40 @@ footer p{
     border-radius: 5px;
 }
 
+.user_photo_name{
+    display: flex;
+}
 
-.yourComent{
-    width: 1240px;
-    border-radius: 5px;
+button:hover{
+    background-color: #063BA8;
+    padding: 9px 22px;
+}
+
+
+.menu a:hover{
+    background-color: #FF9837;
+    padding: 7px 16px;
+}
+
+.program{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.comments{
+    background-color: #196A78;;
+}
+
+.error{
+    color: #FFF2DB;
+    font-size: 70px;
+    padding: 70px;
+}
+
+h1 {
+    font-family: Didact Gothic;
 }
